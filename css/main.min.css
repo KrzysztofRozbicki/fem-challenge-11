@@ -13,7 +13,7 @@
   --text-accent-500: hsl(333, 80%, 67%);
 }
 
-@media (min-width: 64 em) {
+@media (min-width: 64em) {
   :root {
     --fs-700: 3.5rem;
   }
@@ -26,6 +26,11 @@
   letter-spacing: -1.43px;
 }
 
+@media (min-width: 64em) {
+  .header-700 {
+    line-height: 3rem;
+  }
+}
 .text-500 {
   font-size: var(--fs-500);
   color: var(--text-primary-100);
@@ -67,43 +72,18 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: var(--fs-300);
-  color: var(--text-primary-100);
+  color: var(--text-primary-500);
   font-weight: 400;
   line-height: 1.2;
 }
 .attribution__link {
-  color: var(--text-primary-100);
+  color: var(--text-primary-600);
   font-weight: 700;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 .attribution__link:hover, .attribution__link:focus {
-  color: var(--text-primary-600);
-}
-
-body {
-  font-family: var(--ff-primary);
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  background-color: var(--bg-primary-100);
-}
-
-.wrapper {
-  padding: 5.125rem 1.5rem;
+  color: var(--text-accent-500);
 }
 
 .hero {
@@ -137,6 +117,51 @@ body {
   margin-inline: 0.15rem;
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4.5rem;
+  }
+  .hero__main {
+    margin: 0;
+    max-width: 27.75rem;
+    text-align: left;
+  }
+  .hero__rating {
+    width: 33.75rem;
+  }
+  .hero__rating__box {
+    padding-block: 1.25rem;
+    width: 27.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+  }
+  .hero__rating__box:nth-child(2) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .hero__rating__box:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .hero__rating__stars {
+    margin: 0;
+  }
+}
 .review {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,4 +194,65 @@ body {
 }
 .review__person {
   margin-bottom: 0.25rem;
+}
+
+@media (min-width: 64em) {
+  .review {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
+    height: 16.625rem;
+  }
+  .review__box {
+    height: 14.625rem;
+  }
+  .review__box:nth-child(1) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .review__box:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+body {
+  font-family: var(--ff-primary);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: url("../images/bg-pattern-top-mobile.svg") top left no-repeat, url("../images/bg-pattern-bottom-mobile.svg") bottom right no-repeat;
+  background-color: var(--bg-primary-100);
+}
+
+.wrapper {
+  padding: 5.125rem 1.5rem;
+}
+
+@media (min-width: 64em) {
+  body {
+    background: url("../images/bg-pattern-top-desktop.svg") top left no-repeat, url("../images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
+  }
+  .wrapper {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 7.375rem 2rem 6.25rem;
+  }
 }/*# sourceMappingURL=main.min.css.map */

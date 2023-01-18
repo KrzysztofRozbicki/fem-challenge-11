@@ -12,6 +12,12 @@
   letter-spacing: -1.43px;
 }
 
+@media (min-width: $desktop-size) {
+  .header-700 {
+    line-height: 3rem;
+  }
+}
+
 .text-500 {
   @include text(var(--fs-500), var(--text-primary-100), 500, 1.29);
   letter-spacing: -0.3px;
