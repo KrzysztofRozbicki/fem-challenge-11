@@ -10,9 +10,9 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  background-color: var(--bg-primary-100);
   background: url('../images/bg-pattern-top-mobile.svg') top left no-repeat,
     url('../images/bg-pattern-bottom-mobile.svg') bottom right no-repeat;
-  background-color: var(--bg-primary-100);
 }
 
 .wrapper {
