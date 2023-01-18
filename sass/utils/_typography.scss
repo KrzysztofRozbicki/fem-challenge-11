@@ -7,21 +7,34 @@
   line-height: $line;
 }
 
-.header-500 {
-  @include text(var(--fs-600), var(--text-primary-600), 700, 1.24);
-  &__age {
-    color: var(--text-primary-500);
-    font-weight: 400;
-  }
-}
-
-.text-400 {
-  @include text(var(--fs-400), var(--text-primary-500), 400, 1.24);
-  letter-spacing: 1.5px;
-  margin-top: 0.375rem;
+.header-700 {
+  @include text(var(--fs-700), var(--text-primary-600), 700, 2rem);
+  letter-spacing: -1.43px;
 }
 
 .text-500 {
-  @include text(var(--fs-500), var(--text-primary-500), 400, 1.085);
-  margin-top: 0.75rem;
+  @include text(var(--fs-500), var(--text-primary-100), 500, 1.29);
+  letter-spacing: -0.3px;
+  &--name {
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0;
+  }
+  &--position {
+    color: var(--text-accent-500);
+    line-height: 1rem;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  &--rating {
+    font-weight: 700;
+    line-height: 1rem;
+    color: var(--text-primary-600);
+    letter-spacing: 0;
+  }
+}
+
+.text-600 {
+  @include text(var(--fs-600), var(--text-primary-500), 500, 1.31);
+  letter-spacing: -0.63px;
 }

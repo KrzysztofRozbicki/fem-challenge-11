@@ -1,19 +1,26 @@
 :root {
-  --ff-primary: ;
+  --ff-primary: 'League Spartan', sans-serif;
 
-  --fs-300: 1rem;
-  --fs-400: 1rem;
-  --fs-500: 1rem;
-  --fs-600: 1rem;
+  --fs-300: 0.5rem;
+  --fs-500: 1.0625rem; //17px
+  --fs-600: 1.1875rem; //19px
+  --fs-700: 2.5rem; //40px
 
   --bg-primary-100: #ffffff;
-  --bg-primary-500: #ffffff;
-
-  --border-primary-500: #ffffff;
+  --bg-primary-500: #f7f2f7;
+  --bg-primary-600: var(--text-primary-600);
 
   --text-primary-100: #ffffff;
-  --text-primary-500: #ffffff;
-  --text-primary-600: #ffffff;
+  --text-primary-500: hsl(303, 10%, 53%);
+  --text-primary-600: hsl(300, 43%, 22%);
+
+  --text-accent-500: hsl(333, 80%, 67%);
 }
 
-$tablet-size: 48em;
+$desktop-size: 64 em;
+
+@media (min-width: $desktop-size) {
+  :root {
+    --fs-700: 3.5rem;
+  }
+}

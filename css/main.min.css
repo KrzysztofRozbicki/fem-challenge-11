@@ -1,43 +1,62 @@
 :root {
-  --ff-primary: ;
-  --fs-300: 1rem;
-  --fs-400: 1rem;
-  --fs-500: 1rem;
-  --fs-600: 1rem;
+  --ff-primary: "League Spartan", sans-serif;
+  --fs-300: 0.5rem;
+  --fs-500: 1.0625rem;
+  --fs-600: 1.1875rem;
+  --fs-700: 2.5rem;
   --bg-primary-100: #ffffff;
-  --bg-primary-500: #ffffff;
-  --border-primary-500: #ffffff;
+  --bg-primary-500: #f7f2f7;
+  --bg-primary-600: var(--text-primary-600);
   --text-primary-100: #ffffff;
-  --text-primary-500: #ffffff;
-  --text-primary-600: #ffffff;
+  --text-primary-500: hsl(303, 10%, 53%);
+  --text-primary-600: hsl(300, 43%, 22%);
+  --text-accent-500: hsl(333, 80%, 67%);
 }
 
-.header-500 {
-  font-size: var(--fs-600);
+@media (min-width: 64 em) {
+  :root {
+    --fs-700: 3.5rem;
+  }
+}
+.header-700 {
+  font-size: var(--fs-700);
   color: var(--text-primary-600);
   font-weight: 700;
-  line-height: 1.24;
-}
-.header-500__age {
-  color: var(--text-primary-500);
-  font-weight: 400;
-}
-
-.text-400 {
-  font-size: var(--fs-400);
-  color: var(--text-primary-500);
-  font-weight: 400;
-  line-height: 1.24;
-  letter-spacing: 1.5px;
-  margin-top: 0.375rem;
+  line-height: 2rem;
+  letter-spacing: -1.43px;
 }
 
 .text-500 {
   font-size: var(--fs-500);
-  color: var(--text-primary-500);
+  color: var(--text-primary-100);
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.3px;
+}
+.text-500--name {
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0;
+}
+.text-500--position {
+  color: var(--text-accent-500);
+  line-height: 1rem;
+  letter-spacing: 0;
   font-weight: 400;
-  line-height: 1.085;
-  margin-top: 0.75rem;
+}
+.text-500--rating {
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--text-primary-600);
+  letter-spacing: 0;
+}
+
+.text-600 {
+  font-size: var(--fs-600);
+  color: var(--text-primary-500);
+  font-weight: 500;
+  line-height: 1.31;
+  letter-spacing: -0.63px;
 }
 
 .attribution {
@@ -80,5 +99,74 @@ body {
           align-items: center;
   min-height: 100vh;
   text-align: center;
+  background-color: var(--bg-primary-100);
+}
+
+.wrapper {
+  padding: 5.125rem 1.5rem;
+}
+
+.hero {
+  margin-bottom: 3rem;
+}
+.hero__main {
+  margin-bottom: 2.5rem;
+}
+.hero__main__header {
+  margin-bottom: 1rem;
+}
+.hero__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.hero__rating__box {
+  padding-block: 1rem;
   background-color: var(--bg-primary-500);
+  border-radius: 0.5rem;
+}
+.hero__rating__stars {
+  margin-bottom: 1rem;
+}
+.hero__rating__stars img {
+  margin-inline: 0.15rem;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+.review__box {
+  padding: 2.5rem 2rem 2.25rem;
+  border-radius: 0.5rem;
+  background: var(--bg-primary-600);
+}
+.review__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+.review__photo {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+.review__person {
+  margin-bottom: 0.25rem;
 }/*# sourceMappingURL=main.min.css.map */

@@ -10,29 +10,112 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    10,000+ of our users love our products. We only provide great products combined with excellent
-    customer service. See what our satisfied customers are saying about our services. Rated 5 Stars
-    in Reviews Rated 5 Stars in Report Guru Rated 5 Stars in BestTech Colton Smith Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior. Not only did they
-    find the original order, but we also received it in time. Excellent!" Irene Roberts Verified
-    Buyer "Customer service is always excellent and very quick turn around. Completely delighted
-    with the simplicity of the purchase and the speed of delivery." Anne Wallace Verified Buyer "Put
-    an order with this company and can only praise them for the very high standard. Will definitely
-    use them again and recommend them to everyone!"
+    <main class="wrapper">
+      <section class="hero">
+        <div class="hero__main">
+          <h1 class="hero__main__header header-700">10,000+ of our users love our products.</h1>
+          <p class="text-600">
+            We only provide great products combined with excellent customer service. See what our
+            satisfied customers are saying about our services.
+          </p>
+        </div>
+        <div class="hero__rating">
+          <div class="hero__rating__box">
+            <div class="hero__rating__stars">
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+            </div>
+            <p class="text-500 text-500--rating">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="hero__rating__box">
+            <div class="hero__rating__stars">
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+            </div>
+            <p class="text-500 text-500--rating">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="hero__rating__box">
+            <div class="hero__rating__stars">
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+              <img src="./images/icon-star.svg" alt="star" />
+            </div>
+            <p class="text-500 text-500--rating">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="review__box">
+          <div class="review__header">
+            <img
+              class="review__photo"
+              src="./images/image-colton.jpg"
+              alt="Portrait of man - Colton"
+            />
+            <div>
+              <h2 class="review__person text-500 text-500--name">Colton Smith</h2>
+              <p class="text-500 text-500--position">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="text-500">
+            “ We needed the same printed design as the one we had ordered a week prior. Not only did
+            they find the original order, but we also received it in time. Excellent! ”
+          </p>
+        </div>
+        <div class="review__box">
+          <div class="review__header">
+            <img
+              class="review__photo"
+              src="./images/image-irene.jpg"
+              alt="Portrait of woman - Irene"
+            />
+            <div>
+              <h2 class="text-500 text-500--name">Irene Roberts</h2>
+              <p class="text-500 text-500--position">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="text-500">
+            “ Customer service is always excellent and very quick turn around. Completely delighted
+            with the simplicity of the purchase and the speed of delivery.”
+          </p>
+        </div>
+        <div class="review__box">
+          <div class="review__header">
+            <img
+              class="review__photo"
+              src="./images/image-anne.jpg"
+              alt="Portrait of woman - Anne"
+            />
+            <div>
+              <h2 class="text-500 text-500--name">Anne Wallace</h2>
+              <p class="text-500 text-500--position">Verified Buyer</p>
+            </div>
+          </div>
+          <p class="text-500">
+            “ Put an order with this company and can only praise them for the very high standard.
+            Will definitely use them again and recommend them to everyone! ”
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="attribution">
